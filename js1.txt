@@ -1,0 +1,14 @@
+##array
+a = 'a b c d e f g'
+a
+a.split(' ')
+abc
+abc.join('+')
+aaa = abc.join('+')
+aaa
+abc
+
+typeof document.getElementsByTagName('ul')[0]
+typeof document.getElementById('selected')
+typeof document.getElementsByTagName('button')[0]
+

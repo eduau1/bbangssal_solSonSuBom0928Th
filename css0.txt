@@ -1,0 +1,225 @@
+##000_ index
+selector
+
+.aa p{
+.aa div{
+h1 p{
+div p{
+div.aa{
+
+*{
+margin:0;
+pdding:0;
+box-sizing: border-box;
+}
+
+
+font-size: 42px;
+text-decoration:
+background:
+
+resize:none;
+repeat()
+cursor:pointer;
+border-radius: 1-px;
+font-weight: bold;
+grid-template-columns: repeat(4,65px);
+grid-auto-rows:63px;
+grid-gap: 5px;
+
+grid-template-columns: repeat(6,65px);
+grid-auto-rows:65px;
+grid-gap: 5px;
+
+background-position
+background (shorthand property)
+
+background-color
+color
+rem
+flex
+grid
+boarder
+margin
+text-align
+padding
+margin-top
+
+border-style: solid;
+border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+
+
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+
+background-attachment: fixed;
+background-attachment: scroll;
+
+  border: 5px solid red;
+
+  border-style: solid;
+  border-width: medium;
+
+  border-style: dotted;
+  border-width: 2px;
+
+  border-style: dotted;
+  border-width: thick;
+
+  border-style: double;
+  border-width: 15px;
+
+  border-style: double;
+  border-width: thick;
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+
+  padding: 30px;
+  border: 5px solid #4CAF50;
+
+
+h1 {
+  margin: 10px 0 100px 0;
+}
+
+h2 {
+  margin: 50px 10 0 0;
+}
+
+
+
+
+div {
+  border: 5px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+
+
+
+
+
+Demonstrating the Box Model
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+An outline is a line drawn outside the element's border.
+p {
+  border: 2px solid black;
+  outline: #4CAF50 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+Outline - Shorthand
+p.ex1 {outline: dashed;}
+p.ex2 {outline: dotted red;}
+p.ex3 {outline: 5px solid yellow;}
+p.ex4 {outline: thick ridge pink;}
+
+CSS [attribute] Selector
+a[target] {
+  background-color: yellow;
+}
+
+
+
+:hover
+:active
+:focus
+:forcus-within
+:focus-visible
+:visited
+:target
+
+
+
+##100_ selector
+p {
+  color: red;
+  text-align: center;
+}
+
+#id {
+  text-align: center;
+  color: red;
+}
+
+.dogclass {
+  text-align: center;
+  color: red;
+}
+
+h1.dogclass {
+  text-align: center;
+  color: red;
+  font-size: 300%;
+}
+
+##200_ howTo
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+margin-left: 20px;
+Cyan
+Magenta
+Yellow
+color: maroon;
+color: black;
+color: white;
+color: blue;
+color: darkcyan;
+color: darkblue;
+color: cornsilk;
+color: deeppink;
+color: hotpink;
+color: lawngreen;
+color: lightblue;
+color: plum;
+color: silver;
+color: yellow;
+color: yellowgreen;
+color: wheat;
+background-color: linen;
+
+background-color:#ff6347;
+background-color:rgb(255, 99, 71);
+background-color:rgba(255, 99, 71, 0.5);
+background-color:hsl(9, 100%, 64%);
+background-color:hsla(9, 100%, 64%, 0.5);
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+coursor: pointer;

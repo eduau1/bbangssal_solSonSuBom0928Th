@@ -1,0 +1,309 @@
+##class spacebar selection
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+.button {
+font-size: 30px;
+border: 10px solid red;
+}
+.button1 {
+color:blue;
+}
+.button2{
+color:red;
+}
+
+##HTMLEventsonfocus
+<input type="text" id="fname" onblur="alert('11')">
+ <input type="text" onfocus="document.getElementsByTagName('input')[0].style.background = 'yellow'">
+
+##array
+a = 'a b c d e f g'
+a
+a.split(' ')
+abc = a.split(' ')
+abc
+abc.join('+')
+aaa = abc.join('+')
+aaa
+abc
+a
+for(var i = 0; i <abc.length; i++){console.log(abc[i])}
+
+##object
+k = {}
+k.name = 'egoing'
+k.address = 'seoul'
+k.name
+k.address
+a = 'name'
+k[a]
+kk = {}
+kk['name'] = 'eeegoing'
+kk['address'] = 'seoulll'
+kk['name']
+kk['address']
+aa = 'address'
+kk[aa]
+
+a = 'a b c d e f g h i j'
+aa = a.split(' ')
+
+
+
+
+
+##selector<br>
+<body style="background:darkorange; text-align:center; color:white">
+  
+getElement and document.getElement
+<button id="hhid" onclick="getElementById('hhid').style.color = 'red'"> 111 </button>
+didn't work
+<h1> hihi </h1>
+<button onclick = "getElementByTagName('h1')[0].style.fontSize = '50px'"> 222 </button>
+worked
+<button onclick = "document.getElementsByTagName('h1')[0].style.fontSize = '10px'"> 333 </button>
+  
+  <h3 id='tagtag' class='hh kk aa'>👋 Hello World!</h3>
+  <p id='active' class="hell"> hihi </p>
+  <button id='btnid' class="btnclass" onclick='document.getElementsByTagName("h3")[0].style.color = "red"'>button!!!!!</button>
+  <input type="button" value="input!!!!!" onclick='document.getElementsByTagName("h3")[0].style.fontSize = "3vw"; document.getElementsByTagName("h3")[0].style.color = "grey"'>
+  <ul>
+    <li>html</li>	
+    <li id="selected">css</li>	
+    <li id="extra"> <p>
+      javascri;t </p> </li>	
+  </ul>	
+  <p id="demo">1111 </p>
+<p id="myP">   This element has extra spacing   and contains <span>a span element</span>.</p>
+</body>
+
+##for
+document.getElementsByTagName('body')[0].innerText
+words = document.getElementsByTagName('body')[0].innerText
+words
+splited = words.split(' ')
+splited
+splited.length
+splited[0]
+splited[1]
+splited[2]
+for( var i = 0 ; i < splited.length; i++){console.log(splited[i], i)}
+
+
+##console
+typeof document.getElementsByTagName('ul')[0]
+typeof document.getElementById('selected')
+typeof document.getElementsByTagName('button')[0]
+
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0]
+document.getElementById('selected').style.color = 'blue';
+document.getElementById('extra').style.color = 'red';
+document.querySelector('p')
+document.querySelectorAll('li')
+##idactive
+active = "<p id='active' class='hll'> hihihihi </p>"
+document.getElementById('active')
+document.getElementsByTagName('h3')
+document.getElementsByTagName('h3')[0]
+document.getElementsByTagName('h3')[0].style
+document.getElementsByTagName('p')
+document.getElementsByTagName('p').style.color = 'blue'
+document.getElementsByTagName('h3')[0].tagName //read only
+document.getElementsByTagName('h3')[0].id
+document.getElementsByTagName('h3')[0].id = 'deactive'
+##clssName
+document.getElementsByTagName('h3')[0].className
+document.getElementsByTagName('h3')[0].className = 'hh'
+##classList
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.length
+for(var i = 0; i< document.getElementsByTagName('h3')[0].classList.length; i++){
+console.log(document.getElementsByTagName('h3')[0].classList[i])
+}
+document.getElementsByTagName('h3')[0].classList[0]
+document.getElementsByTagName('h3')[0].classList.add('gg')
+document.getElementsByTagName('h3')[0].classList
+document.getElementsByTagName('h3')[0].classList.remove('gg')
+document.getElementsByTagName('h3')[0].classList.toggle('gg')
+
+##attributes
+document.getElementsByTagName('button')[0]
+document.getElementsByTagName('button')[0].attributes
+document.getElementsByTagName('button')[0].attributes.length
+document.getElementsByTagName('button')[0].attributes[0]
+document.getElementsByTagName('button')[0].attributes[0].name
+document.getElementsByTagName('button')[0].attributes[0].value
+<script>
+const nodeMap = document.getElementsByTagName('button')[0].attributes;
+let text = "";
+for (let i = 0; i < nodeMap.length; i++) {
+text += nodeMap[i].name + " = " + nodeMap[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+##innerHTMLinnerTexttextContent
+document.getElementById("myP").innerHTML;
+document.getElementById("myP").innerText;
+document.getElementById("myP").textContent
+
+##Node
+document.getElementsByTagName('ul')[0]
+document.getElementsByTagName('ul')[0].hasChildNodes()
+document.getElementsByTagName('ul')[0].childNodes
+document.getElementsByTagName('ul')[0].firstChild
+document.getElementsByTagName('ul')[0].nextSibling
+document.getElementsByTagName('ul')[0].previousSibling
+document.getElementsByTagName('ul')[0].firstChild.firstChild
+document.getElementById('demo').firstChild
+document.getElementById('demo').firstChild.nodeValue
+document.getElementById('demo').firstChild.data
+document.getElementById('demo').firstChild.nodeValue = 3333333333333
+document.getElementById('demo').firstChild.nodeValue
+document.getElementById('demo').firstChild.data
+
+
+document.nodeType
+document.nodeType === 1
+document.nodeType === 9
+document.getElementsByTagName('ul')[0].nodeType
+document.getElementsByTagName('ul')[0].nodeName
+document.getElementsByTagName('ul')[0].nodeValue
+document.getElementsByTagName('ul')[0].textContent
+document.getElementsByTagName('ul')[0].appendChild()
+document.getElementsByTagName('ul')[0].removeChild()
+
+document.querySelectorAll('li')[2]
+document.querySelectorAll('li')[2].parentNode
+document.querySelectorAll('li')[2].childNodes
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.firstChild
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.lastChild
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes.length
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes[3]
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes[3].constructor.name
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode
+document.getElementsByTagName('ul')[0].getElementsByTagName('li')[0].parentNode.childNodes[3]
+document.getElementsByTagName('ul')[0]
+document.getElementsByTagName('ul')[0].removeChild(document.getElementsByTagName('li')[1])
+
+##document
+window.document
+document
+document.ATTRIBUTE_NODE
+document.childNodes
+document.childNodes[0]
+document.childNodes[1]
+document.createElement('button')
+document.createTextNode('button')
+document.title
+document.URL
+document.referrer
+document.lastModified
+
+for(var i in document.querySelectorAll('li')){document.querySelectorAll('li')[i].style.color = 'blue';}
+
+
+##position getBoundingClientRect()
+document.getElementsByTagName('button')[0].getBoundingClientRect()
+document.getElementsByTagName('button')[0].offsetParent
+document.getElementsByTagName('button')[0].clientWidth
+document.getElementsByTagName('button')[0].clientHeight
+document.getElementsByTagName('li')[0].getBoundingClientRect()
+document.getElementsByTagName('li')[0].clientWidth
+
+##constructor and constructor.name
+<ul>
+<li>html</li>	
+<li id="selected">css</li>	
+<li id="extra">javascri;t</li>	
+</ul>
+document.getElementsByClassName.constructor
+document.getElementsByClassName.constructor.name
+document.getElementsByTagName('li').constructor
+document.getElementsByTagName('li').constructor.name
+document.getElementsByClassName('li').constructor.name
+document.getElementsByClassName('li').constructor.value
+
+
+##onload
+window.onload = function () {}
+
+
+##navigator
+window.navigator.userAgent
+window.navigator.platform
+window.navigator.appName
+window.navigator.geolocation
+window.navigator.product
+window.navigator.language
+window.navigator.cookieEnabled
+window.navigator.appVersion
+window.navigator.onLine
+
+##location
+location.assign()
+location.hash
+location.host
+location.hostname
+location.href
+location.origin
+location.pathname
+location.port
+location.protocol
+location.reload()
+location.replace()
+location.search
+
+
+
+##Window History
+window.history.back()
+window.history.forward()
+
+##Timing Events
+setTimeout(function, milliseconds)
+setInterval(function, milliseconds)
+window.clearTimeout() 
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+<button onclick="clearTimeout(myVar)">Stop it</button>
+setInterval(myTimer, 1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+window.clearInterval() 
+<body>
+<p id="demo"></p>
+<button onclick="clearInterval(myVar)">Stop time</button>
+<script>
+let myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+</body>
+
+##cookies
+document.cookie 
+
+
+##links
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+target = "_self"
+target = "_blank"
+target = "_blank"
+target = "_top"
+<a href="https://www.w3schools.com/html/default.asp"><img src="https://www.w3schools.com/html/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+##bookmark
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a>
+
+##dir
+<p dir="rtl">Write this text right-to-left!</p>
+ltr rtl auto
+
+
+
